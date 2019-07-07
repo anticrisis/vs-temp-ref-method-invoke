@@ -17,7 +17,8 @@ violation inside the `VectorOwner::Check` function.
 
 ## Possible factors
 
-1. Use of `gsl:at` on line 70. If this use is replaced with a direct array access,
+1. Use of `gsl:at` on [line 69](https://github.com/anticrisis/vs-temp-ref-method-invoke/blob/6fb24941d253f12248e31b82b32bcc971fe09a9f/vs-temp-ref-method-invoke/vs-temp-ref-method-invoke.cpp#L69).
+If this use is replaced with a direct array access,
 the bug does not occur.
 
 ```cpp
@@ -30,7 +31,7 @@ the bug does not occur.
 
 2. Accessing a member function via a temporary `this` pointer. The crash on line 101
 does not occur if the result of calling `handle.Get()` is placed in a local variable
-before calling `Run`. A successful case is shown on lines 97-98.
+before calling `Run`. A successful case is shown on [lines 96-97](https://github.com/anticrisis/vs-temp-ref-method-invoke/blob/6fb24941d253f12248e31b82b32bcc971fe09a9f/vs-temp-ref-method-invoke/vs-temp-ref-method-invoke.cpp#L96-L97).
 
 ```cpp
     // this call to VectorOwner::Run succeeds in all cases, because a
