@@ -29,7 +29,7 @@ the bug does not occur.
     //const auto& GetFoo(int i) const noexcept { return foos[i]; }
 ```
 
-2. Accessing a member function via a temporary `this` pointer. The crash on line 101
+2. Accessing a member function via a temporary `this` pointer. The crash on line 100
 does not occur if the result of calling `handle.Get()` is placed in a local variable
 before calling `Run`. A successful case is shown on [lines 96-97](https://github.com/anticrisis/vs-temp-ref-method-invoke/blob/6fb24941d253f12248e31b82b32bcc971fe09a9f/vs-temp-ref-method-invoke/vs-temp-ref-method-invoke.cpp#L96-L97).
 
