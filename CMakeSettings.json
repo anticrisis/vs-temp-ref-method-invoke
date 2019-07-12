@@ -10,7 +10,13 @@
       "buildCommandArgs": "-v",
       "ctestCommandArgs": "",
       "inheritEnvironments": [ "msvc_x86" ],
-      "variables": [],
+      "variables": [
+        {
+          "name": "BUILD_WITH_SLASH_P",
+          "value": "False",
+          "type": "BOOL"
+        }
+      ],
       "cmakeToolchain": "E:/anticrisis/source/repos/cpp/vcpkg/scripts/buildsystems/vcpkg.cmake"
     },
     {
