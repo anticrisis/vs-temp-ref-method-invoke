@@ -7,6 +7,22 @@ Please see comments in the source file. The bug only occurs with a Release build
 
 ## To reproduce
 
+### Set up dependencies
+
+This uses a bootstrap and `vcpkg` setup that I made. It runs `git submodule update` and then
+runs `vcpkg`'s bootstrap script. Then, it installs the dependencies in `packages.txt`
+
+From Powershell:
+
+```powershell
+PS> .\bootstrap.ps1
+...
+PS> .\install-deps.ps1
+
+```
+
+### Run the test
+
 1. Open folder in Visual Studio.
 2. Configure CMake.
 3. Select `x86-Release` configuration.

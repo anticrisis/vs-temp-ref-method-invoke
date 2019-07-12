@@ -1,7 +1,7 @@
 ﻿# CMakeList.txt : CMake project for vs-temp-ref-method-invoke, include source and define
 # project specific logic here.
 #
-cmake_minimum_required (VERSION 3.8)
+cmake_minimum_required (VERSION 3.14)
 
 # Add source to this project's executable.
 add_executable (vs-temp-ref-method-invoke "vs-temp-ref-method-invoke.cpp" "vs-temp-ref-method-invoke.h")
