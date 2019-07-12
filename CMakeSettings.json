@@ -10,7 +10,21 @@
       "buildCommandArgs": "-v",
       "ctestCommandArgs": "",
       "inheritEnvironments": [ "msvc_x86" ],
-      "variables": []
+      "variables": [],
+      "cmakeToolchain": "E:/anticrisis/source/repos/cpp/vcpkg/scripts/buildsystems/vcpkg.cmake"
+    },
+    {
+      "name": "x86-Clang-Release",
+      "generator": "Ninja",
+      "configurationType": "RelWithDebInfo",
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "-v",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": [ "clang_cl_x86" ],
+      "variables": [],
+      "cmakeToolchain": "E:/anticrisis/source/repos/cpp/vcpkg/scripts/buildsystems/vcpkg.cmake"
     }
   ]
 }
