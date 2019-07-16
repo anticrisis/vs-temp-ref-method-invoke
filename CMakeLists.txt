@@ -24,6 +24,9 @@ if(DEFINED ENV{VCPKG_DEFAULT_TRIPLET} AND NOT DEFINED VCPKG_TARGET_TRIPLET)
   set(VCPKG_TARGET_TRIPLET "$ENV{VCPKG_DEFAULT_TRIPLET}" CACHE STRING "")
 endif()
 
+message(STATUS "VCPKG_ROOT = $ENV{VCPKG_ROOT}")
+message(STATUS "CMAKE_TOOLCHAIN_FILE = ${CMAKE_TOOLCHAIN_FILE}")
+
 # -- project ----------------------------------------------------------------
 
 project ("vs-temp-ref-method-invoke")
