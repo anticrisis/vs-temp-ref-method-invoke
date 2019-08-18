@@ -9,6 +9,10 @@ Please see comments in the source file. The bug only occurs with a Release build
 
 ### Update
 
+**August 18, 2019:** The problem no longer occurs in Visual Studio **16.2.2**. Thank you for fixing the bug.
+
+*Older updates follow*
+
 Code generation in Visual Studio Version 16.3.0 Preview 1.0 has changed, and the problem no longer occurs.
 The problem still does occur in Version 16.2.0.
 
